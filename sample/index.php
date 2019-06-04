@@ -12,7 +12,7 @@ echo <<< HTML
 </head>
 <body>
 <div style='text-align: center'>
-<h1>PHP Jasper XML ($version) Example</h1><br>
+<h1>PHP Jasper XML ($phpjasperversion) Example</h1><br>
 <image src="simitlogo.png">
     
 	

@@ -1,0 +1,17 @@
+*~
+_notes/
+_notes
+.htaccess
+.svn
+.settings/
+.buildpath
+.project
+nbproject/
+Thumbs.db
+composer.lock
+/build/
+/phpunit.xml
+/vendor/
+/.buildpath
+/*.tmp
+setting.php

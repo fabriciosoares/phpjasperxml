@@ -1,16 +1,10 @@
 <?php
 
-
-include_once __DIR__.'/abstractPHPJasperXML.inc.php';
-include_once __DIR__."/../../pchart2/pChart/pCharts.php";
-include_once __DIR__."/../../pchart2/pChart/pData.php";
-include_once __DIR__."/../../pchart2/pChart/pDraw.php";
-include_once __DIR__."/../../pchart2/pChart/pColor.php";
-include_once __DIR__."/../../pchart2/pChart/pPie.php";
-include_once __DIR__."/../../pchart2/pChart/pException.php";
+namespace Simitgroup\PHPJasperXML;
 
 //version 1.1
 
+use pChart;
 use pChart\pColor;
 use pChart\pDraw;
 use pChart\pCharts;

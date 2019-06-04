@@ -1,7 +1,14 @@
 <?php
+namespace Simitgroup\PHPJasperXMLOld;
+
+use function Simitgroup\PHPJasperXMLOld\PHPJasperXMLSubReport\right;
+use function Simitgroup\PHPJasperXML\abstractPHPJasperXML\left;
+use PDO;
+use PDOException;
+use pChart\pData;
 
 //version 1
-class PHPJasperXMLSubReport{
+class PHPJasperXMLSubReport {
     private $adjust=1.2;
     public $version="1.0";
     private $pdflib;
@@ -27,7 +34,7 @@ class PHPJasperXMLSubReport{
     private $report_count=0;        //### New declaration (variable exists in original too)
     private $group_count = array(); //### New declaration
     private $xoffset=0;
-    public function PHPJasperXMLSubReport($lang="en",$pdflib="TCPDF",$xoffset=0){
+    public function PHPJasperXMLSubReportOld ($lang="en",$pdflib="TCPDF",$xoffset=0){
         $this->lang=$lang;
         //error_reporting(1);
         $this->pdflib=$pdflib;

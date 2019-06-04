@@ -4,15 +4,12 @@
  * and open the template in the editor.
  */
 
+require_once "setting.php";
+require_once "../PHPJasperXML.inc.php";
+require_once __DIR__ . '/../vendor/autoload.php';
+use Simitgroup\PHPJasperXML\PHPJasperXML;
 
-include_once("../PHPJasperXML.inc.php");
-
-include_once ('setting.php');
-
-
-
-$id=$_GET['id'];
-$PHPJasperXML = new PHPJasperXML("en","TCPDF");
+$PHPJasperXML = new PHPJasperXML();
 $PHPJasperXML->debugsql=false;
 $PHPJasperXML->arrayParameter=array("id"=>$id);
 $PHPJasperXML->load_xml_file("sample5.jrxml");

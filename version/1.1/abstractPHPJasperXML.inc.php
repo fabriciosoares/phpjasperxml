@@ -1,5 +1,7 @@
 <?php
 
+namespace Simitgroup\PHPJasperXML;
+
 class abstractPHPJasperXML
 {
         protected $adjust=1.2;

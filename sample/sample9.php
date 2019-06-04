@@ -3,8 +3,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-include_once("../PHPJasperXML.inc.php");
-include_once ('setting.php');
+
+require_once "setting.php";
+require_once "../PHPJasperXML.inc.php";
+require_once __DIR__ . '/../vendor/autoload.php';
+use Simitgroup\PHPJasperXML\PHPJasperXML;
 
 $data=[
     [
@@ -25,9 +28,6 @@ $data=[
       
 
 ];
-
-
-
 
 $PHPJasperXML = new PHPJasperXML();
 //$PHPJasperXML->debugsql=true;

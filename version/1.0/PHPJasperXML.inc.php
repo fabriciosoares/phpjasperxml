@@ -1,4 +1,11 @@
 <?php
+namespace Simitgroup\PHPJasperXMLOld;
+use function Simitgroup\PHPJasperXMLOld\PHPJasperXML\right;
+use PDO;
+use PDOException;
+use TCPDF;
+use pChart\pData;
+use pChart\pPie;
 
 //version 1
 class PHPJasperXML {
@@ -36,6 +43,7 @@ class PHPJasperXML {
         public $lastrowresult=array();
         private $dbpara=array();
     public function __construct($lang="en",$pdflib="TCPDF") {
+        
         $this->lang=$lang;
         // $this->setErrorReport(2);
         ini_set('display_errors', 'Off');
@@ -53,7 +61,7 @@ class PHPJasperXML {
     }
 
     //new library either submit cndriver as mysql, else will use pdo
-    public function connect($db_host='',$db_user='',$db_pass='',$dbname='',$cndriver="mysql") {
+    public function connect($db_host='',$db_user='',$db_pass='',$dbname='',$cndriver="mysqli") {
         $this->db_host=$db_host;
         $this->db_user=$db_user;
         $this->db_pass=$db_pass;

@@ -1,5 +1,5 @@
 <?php
-
+namespace Simitgroup\PHPJasperXML;
 
 class PHPJasperXMLElement extends abstractPHPJasperXML
 {

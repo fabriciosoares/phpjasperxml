@@ -1,8 +1,11 @@
 <?php
+namespace Simitgroup\PHPJasperXML;
+
+use ExportXLS;
+use TCPDF;
+use pChart\pData;
 
 include_once __DIR__.'/abstractPHPJasperXML.inc.php';
-
-
 //version 1.1
 class PHPJasperXML extends abstractPHPJasperXML{
     // private $adjust=1.2;

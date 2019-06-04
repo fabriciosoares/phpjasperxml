@@ -3,13 +3,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+require_once "setting.php";
+require_once "../PHPJasperXML.inc.php";
+require_once __DIR__ . '/../vendor/autoload.php';
+use Simitgroup\PHPJasperXML\PHPJasperXML;
 
-include_once("../PHPJasperXML.inc.php");
-include_once ('setting.php');
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-
-
-
 
 $PHPJasperXML = new PHPJasperXML();
 //$PHPJasperXML->debugsql=true;

@@ -1,5 +1,7 @@
 <?php
-
+namespace Simitgroup\PHPJasperXML;
+use PDO;
+use pChart\pData;
 
 //version 1.1
 class PHPJasperXMLSubReport extends abstractPHPJasperXML{

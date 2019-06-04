@@ -1,4 +1,5 @@
 <?php
+namespace Simitgroup\PHPJasperXMLOld;
 
 class ExportXLS{
     public $wb;
